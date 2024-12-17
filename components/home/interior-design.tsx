@@ -9,6 +9,7 @@ export const InteriorDesign: FC = (props) => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        backgroundColor: "black"
       }}
       className=""
     >
@@ -22,14 +23,14 @@ export const InteriorDesign: FC = (props) => {
         </div>
 
         <div
-          className="max-w-lg bg-white rounded-lg md:max-w-2xl md:shadow-lg lg:w-3/5 lg:left-0 order-1 lg:order-2 relative lg:absolute lg:ml-20 xl:ml-12"
+          className="max-w-lg bg-gray-950 rounded-lg md:max-w-2xl md:shadow-2xl lg:w-3/5 lg:left-0 order-1 lg:order-2 relative lg:absolute lg:ml-20 xl:ml-12"
         >
           <div className="flex flex-col p-12 md:px-16">
-            <h1 className="text-4xl lg:text-6xl font-bold">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white">
               <span className="">Classical</span> Architecture
             </h1>
-            <div className="w-20 h-2 bg-black my-4"></div>
-            <p className="text-xl text-gray-800 mt-4">
+            <div className="w-20 h-2 bg-white my-4"></div>
+            <p className="text-xl text-gray-500 mt-4">
             Experience timeless elegance with designs inspired by historical grandeur, symmetry, and classical elements.
             </p>
           </div>

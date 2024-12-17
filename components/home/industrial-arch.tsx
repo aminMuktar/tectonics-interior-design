@@ -6,17 +6,17 @@ import type { FC } from "react";
 export const IndustrialArch: FC = ()=>{
     return (
         <>
-        <section className="lg:pt-20 pt-0 lg:pl-8 h-full">
+        <section className="lg:pt-20 bg-black pt-0 lg:pl-8">
             <div
-            className="rounded-2xl bg-gray-50 py-10 overflow-hidden m-5 lg:m-0 2xl:py-16 xl:py-8  lg:rounded-tl-2xl lg:rounded-bl-2xl ">
+            className="rounded-2xl bg-black border border-slate-800 overflow-hidden m-5 lg:m-0 2xl:py-16 xl:py-8  lg:rounded-tl-2xl lg:rounded-bl-2xl ">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 gap-14 items-center lg:grid-cols-12 lg:gap32">
+                <div className="grid grid-cols-1 gap-14 items-center lg:grid-cols-12 ">
                 <div className="w-full xl:col-span-5 lg:col-span-6 2xl:-mx-5 xl:-mx-0">
                     <div className="flex items-center text-sm font-medium text-gray-500 justify-center lg:justify-start">
-                    <span className="bg-black py-1 px-3 rounded-2xl text-xs font-medium text-white mr-3 ">#1</span>
+                    <span className="bg-slate-800 py-1 px-3 rounded-2xl text-xs font-medium text-white mr-3 ">#1</span>
                     Leading interior design company in ethiopia
                     </div>
-                    <h1 className="text-4xl lg:text-6xl font-bold">
+                    <h1 className="text-4xl lg:text-6xl text-white font-bold">
                         Industrial Architecture
                     </h1>
                     <p className=" text-gray-500 text-lg text-center lg:text-left">
@@ -29,7 +29,7 @@ export const IndustrialArch: FC = ()=>{
                     <div className="py-8">
                     <a
                     href="/contact"
-                        className="bg-black rounded-full py-3 px-7 text-base font-semibold text-white hover:bg-gray-700 cursor-pointer transition-all duration-500 md:w-fit w-full">
+                        className="bg-white rounded-full py-3 px-7 text-base font-semibold text-black hover:bg-gray-700 cursor-pointer transition-all duration-500 md:w-fit w-full">
                             Contact us
                         </a>
                     </div>

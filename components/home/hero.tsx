@@ -28,7 +28,7 @@ export const HomeHero: FC = (props)=>{
         }}
       >
         
-        <h1 className="col-start-1 font-bold row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight sm:text-7xl xl:max-w-[43.5rem]">
+        <h1 className="col-start-1 font-bold row-start-2 mt-4 max-w-[36rem] text-4xl font-black tracking-tight sm:text-7xl xl:max-w-[43.5rem]">
             <span className="block text-transparent leading-snug bg-clip-text bg-gradient-to-r from-gray-200 via-slate-200 to-slate-100">
               Crafting Spaces, Designing Dreams 
             </span>

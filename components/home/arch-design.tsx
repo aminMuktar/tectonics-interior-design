@@ -13,6 +13,7 @@ export const HomeService: FC = (props)=>{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                backgroundColor: 'black'
             }}
             
         >
@@ -22,9 +23,9 @@ export const HomeService: FC = (props)=>{
                     
                     <header className="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
                     <div className="w-full">
-                        <h1 className="text-4xl lg:text-6xl font-bold"><span>Modern </span>architecture</h1>
-                        <div className="w-20 h-2 bg-black my-4"></div>
-                        <p className="text-xl text-gray-800 mb-10">Embrace simplicity and functionality with clean lines, open spaces, and innovative materials. Perfect for those who value sleek and contemporary aesthetics.</p>
+                        <h1 className="text-4xl lg:text-6xl font-bold text-white"><span>Modern </span>architecture</h1>
+                        <div className="w-20 h-2 bg-white my-4"></div>
+                        <p className="text-xl text-gray-500 mb-10">Embrace simplicity and functionality with clean lines, open spaces, and innovative materials. Perfect for those who value sleek and contemporary aesthetics.</p>
                     </div>
                     </header>
                 </div>

@@ -7,12 +7,13 @@ import { LandscapeDesign } from "@/components/home/landscape-design";
 import { TextDivider } from "@/components/text-divider";
 import { ContemporaryArch } from "@/components/home/contemporary-arch";
 import { IndustrialArch } from "@/components/home/industrial-arch";
+import { Wabisabi } from "@/components/home/wabisabi";
 // import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
     <>
-    <div className="py-16">
+    <div className="">
       <HomeHero />
       <TextDivider />
       <HomeService />
@@ -20,6 +21,7 @@ export default function Home() {
       <TextDivider />
       <LandscapeDesign />
       <ContemporaryArch />
+      <Wabisabi />
       <IndustrialArch />
       </div>
     </>
