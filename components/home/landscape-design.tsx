@@ -35,7 +35,7 @@ const BorderLinearProgress = styled(LinearProgress, {
 }))
 export const LandscapeDesign: FC = () => {
   return (
-    <Box id="feature" sx={{ py: { xs: 10, md: 14 }, backgroundColor: 'background.paper' }}>
+    <Box id="feature" sx={{ py: { xs: 10, md: 14 }, backgroundColor: 'black' }}>
       <Container>
         <Grid2 container spacing={6}>
           <Grid2 size={{ xs:12, md:5 }}>
@@ -51,47 +51,47 @@ export const LandscapeDesign: FC = () => {
                   px: 2.2,
                   py: 1.4,
                   zIndex: 1,
-                  backgroundColor: 'background.paper',
+                  backgroundColor: "#030712",
                   width: 190,
                 }}
               >
                 <Box sx={{ mb: 2 }}>
-                  <Typography variant="subtitle1">
+                  <Typography variant="subtitle1" sx={{ color: "white" }}>
                     Design
                   </Typography>
                   <BorderLinearProgress
                     sx={{
                       backgroundColor: 'black',
                       '& .MuiLinearProgress-bar': {
-                        backgroundColor: 'gray'
+                        backgroundColor: '#64748B'
                       }
                     }}
                     variant="determinate"
                     value={65} order={1} />
                 </Box>
                 <Box sx={{ mb: 2 }}>
-                  <Typography variant="subtitle1" >
+                  <Typography variant="subtitle1" sx={{ color: "white" }}>
                     Development
                   </Typography>
                   <BorderLinearProgress
                     sx={{
                       backgroundColor: 'black',
                       '& .MuiLinearProgress-bar': {
-                        backgroundColor: 'gray'
+                        backgroundColor: '#64748B'
                       }
                     }}
                     variant="determinate"
                     value={40} order={2} />
                 </Box>
                 <Box sx={{ mb: 2 }}>
-                  <Typography variant="subtitle1">
+                  <Typography variant="subtitle1" sx={{ color: "white" }}>
                     Consult
                   </Typography>
                   <BorderLinearProgress
                     sx={{
                       backgroundColor: 'black',
                       '& .MuiLinearProgress-bar': {
-                        backgroundColor: 'gray'
+                        backgroundColor: '#64748B'
                       }
                     }}
                     variant="determinate" 
@@ -109,7 +109,7 @@ export const LandscapeDesign: FC = () => {
                   px: 2.2,
                   py: 2,
                   zIndex: 1,
-                  backgroundColor: 'background.paper',
+                  backgroundColor: '#030712',
                   textAlign: 'center',
                 }}
               >
@@ -122,9 +122,8 @@ export const LandscapeDesign: FC = () => {
                     flexDirection: 'column',
                   }}
                 >
-                  <Typography sx={{ fontWeight: 600, lineHeight: 1 }}>Customer success</Typography>
+                  <Typography sx={{ fontWeight: 600, lineHeight: 1, color: "white" }}>Customer success</Typography>
                   <Typography variant="subtitle1" sx={{ mb: 3, color: 'text.disabled' }}>
-                    
                   </Typography>
                   <Box
                     sx={{
@@ -136,13 +135,13 @@ export const LandscapeDesign: FC = () => {
                       flexDirection: 'column',
                     }}
                   >
-                    <Typography variant="h5" sx={{ color: '#000' }}>
+                    <Typography variant="h5" sx={{ color: 'white' }}>
                       75%
                     </Typography>
                     <CircularProgress
                       sx={{ 
                         position: 'absolute',
-                        color: 'divider',                        
+                        color: 'white',                        
                       }}
                       thickness={4}
                       variant="determinate"
@@ -155,7 +154,7 @@ export const LandscapeDesign: FC = () => {
                       variant="determinate"
                       value={75}
                       size={85}
-                      sx={{ transform: 'rotate(96deg) !important', color: '#1b015e', position: 'absolute' }}
+                      sx={{ transform: 'rotate(96deg) !important', color: '#64748B', position: 'absolute' }}
                     />
                   </Box>
                 </Box>
@@ -163,8 +162,8 @@ export const LandscapeDesign: FC = () => {
             </Box>
           </Grid2>
           <Grid2 size={{ xs: 12, md: 7 }}>
-            <h1 className="text-4xl lg:text-6xl font-bold"><span>Minimal </span>architecture</h1>
-            <p className="px-6 text-xl text-gray-800 mb-10">
+            <h1 className="text-4xl lg:text-6xl text-white font-bold"><span>Minimal </span>architecture</h1>
+            <p className="px-6 text-xl text-gray-500 mb-10">
             Find beauty in simplicity with clutter-free spaces and a focus on essential elements that evoke tranquility and purpose.
             </p>
               
@@ -173,32 +172,7 @@ export const LandscapeDesign: FC = () => {
               {data.map(({ title, description, icon }, index) => (
                 <Grid2 key={String(index)} size={{ xs:12, md:6 }}>
                   <Box sx={{ px: 2, py: 1.5, boxShadow: 1, borderRadius: 4, display: 'flex', alignItems: 'center' }}>
-                    <Box
-                      sx={{
-                        mr: 1,
-                        backgroundColor: 'primary.main',
-                        borderRadius: '50%',
-                        height: 36,
-                        width: 36,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        color: 'primary.contrastText',
-                        '& svg': {
-                          fontSize: 20,
-                        },
-                      }}
-                    >
-                      {icon}
-                    </Box>
-                    <Box sx={{ display: 'flex', flex: 1, flexDirection: 'column' }}>
-                      <Typography variant="h6" sx={{ fontSize: '1rem', mb: 1, color: 'secondary.main' }}>
-                        {title}
-                      </Typography>
-                      <Typography sx={{ lineHeight: 1.3, color: 'text.secondary' }} variant="subtitle1">
-                        {description}
-                      </Typography>
-                    </Box>
+                    
                   </Box>
                 </Grid2>
               ))}
