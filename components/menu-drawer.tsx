@@ -19,7 +19,7 @@ export const MenuDrawer: FC<MenuDrawerProps> = (props) =>{
             onClose={onClose}
             open={open}
             ModalProps={{ sx: {zIndex: 2000 }}}
-            PaperProps={{ sx: {width: "100%" }}}
+            PaperProps={{ sx: { width: "100%", backgroundColor: "black" }}}
             transitionDuration={{ enter: 500, exit: 1000 }}
         >
             <Box
@@ -38,7 +38,7 @@ export const MenuDrawer: FC<MenuDrawerProps> = (props) =>{
                 color="inherit"
                 onClick={onClose}
                 >
-                    <Close fontSize="large" />
+                    <Close fontSize="large" sx={{ color: "white" }}/>
                 </IconButton>
             </Box>
             <Box
