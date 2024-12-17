@@ -4,8 +4,8 @@ import * as React from 'react';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(request: Request, res: Response) {
-    const { email, subject, comment } = await request.json()
+export async function POST() {
+    
   try {
     const { data, error } = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',
