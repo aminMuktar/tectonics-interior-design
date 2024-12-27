@@ -33,11 +33,11 @@ export const Navbar:FC = () =>{
         <>
             
             <header className="fixed top-0 w-full z-50 bg-black bg-opacity-50 backdrop-blur-lg ">
-            <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6">
+            <nav aria-label="Global" style={{ maxHeight: "80px" }} className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-6">
             <div className="flex lg:flex-1">
                 <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img alt="" src="/logo.svg" className="h-10 w-10 rounded-full" />
+                <img alt="" src="/logo_e.png" className="h-48 w-32 rounded-full" />
                 </a>
             </div>
             <p className="hidden text-white font-bold text-lg lg:flex lg:gap-x-12">

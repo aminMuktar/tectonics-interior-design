@@ -28,11 +28,12 @@ export const MenuDrawer: FC<MenuDrawerProps> = (props) =>{
                     display: 'flex',
                     justifyContent: 'space-between',
                     px: 3,
-                    py: 2
+                    py: 2,
+                    maxHeight: 120
                 }}
             >
                     <Box>
-                        <img alt="" src="/logo.svg" className="h-16 w-16 rounded-full" />  
+                        <img alt="" src="/logo.svg" className="h-48 w-32 rounded-full" />  
                     </Box>
                 <IconButton
                 color="inherit"

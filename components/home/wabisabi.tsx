@@ -14,7 +14,7 @@ export const Wabisabi: FC = ()=>{
             </h1>
           </div>
           {/* Planet */}
-          <div className="pb-16 md:pb-20" data-aos="zoom-y-out">
+          <div className="pb-16 md:pb-20 overflow-hidden" data-aos="zoom-y-out">
             <div className="text-center">
               <div className="relative inline-flex rounded-full before:absolute before:inset-0 before:-z-10 before:scale-[.85] after:absolute after:inset-0 ">
                 <Image
@@ -25,14 +25,8 @@ export const Wabisabi: FC = ()=>{
                   alt="Planet"
                 />
                 <div className="pointer-events-none" aria-hidden="true">
-                  <Image
-                    className="absolute -right-64 -top-20 z-10 max-w-none"
-                    src="/planet-overlay.svg"
-                    width={789}
-                    height={755}
-                    alt="Planet decoration"
-                  />
-                  <div>
+                  
+                  <div className="">
                     <Image
                       className="absolute -left-28 top-16 z-10 animate-[float_4s_ease-in-out_infinite_both] opacity-80 transition-opacity duration-500"
                       src="/planet-tag-01.png"
@@ -40,13 +34,13 @@ export const Wabisabi: FC = ()=>{
                       height={56}
                       alt="Tag 01"
                     />
-                    <Image
+                    {/* <Image
                       className="absolute left-56 top-7 z-10 animate-[float_4s_ease-in-out_infinite_1s_both] opacity-30 transition-opacity duration-500"
                       src="/plannet-tag-02.png"
                       width={241}
                       height={56}
                       alt="Tag 02"
-                    />
+                    /> */}
                     <Image
                       className="absolute -left-20 bottom-24 z-10 animate-[float_4s_ease-in-out_infinite_2s_both] opacity-25 transition-opacity duration-500"
                       src="/planet-tag-03.png"

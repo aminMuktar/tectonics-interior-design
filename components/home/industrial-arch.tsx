@@ -6,9 +6,9 @@ import type { FC } from "react";
 export const IndustrialArch: FC = ()=>{
     return (
         <>
-        <section className="lg:pt-20 bg-black pt-0 lg:pl-8">
+        <section className="bg-black h-full my-0">
             <div
-            className="rounded-2xl bg-black border border-slate-800 overflow-hidden m-5 lg:m-0 2xl:py-16 xl:py-8  lg:rounded-tl-2xl lg:rounded-bl-2xl ">
+            className="rounded-2xl border border-slate-800 overflow-hidden m-5 lg:m-0 2xl:py-16 xl:py-8  lg:rounded-tl-2xl lg:rounded-bl-2xl ">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-14 items-center lg:grid-cols-12 ">
                 <div className="w-full xl:col-span-5 lg:col-span-6 2xl:-mx-5 xl:-mx-0">
@@ -29,26 +29,16 @@ export const IndustrialArch: FC = ()=>{
                     <div className="py-8">
                     <a
                     href="/contact"
-                        className="bg-white rounded-full py-3 px-7 text-base font-semibold text-black hover:bg-gray-700 cursor-pointer transition-all duration-500 md:w-fit w-full">
+                        className="bg-white rounded-full py-3 px-7 text-base font-semibold text-black hover:bg-gray-200 cursor-pointer transition-all duration-500 md:w-fit w-full">
                             Contact us
                         </a>
                     </div>
                     {/* </div> */}
-                    <div className="flex items-center flex-col lg:flex-row">
-                    {/* <div className="flex items-center">
-                        <img src="https://pagedone.io/asset/uploads/1694846673.png" alt="Rounded image "
-                        className="border-2 border-solid border-indigo-50 rounded-full relative z-50 object-cover" />
-                        <img src="https://pagedone.io/asset/uploads/1694846691.png" alt="Rounded image"
-                        className="border-2 border-solid border-indigo-50 rounded-full relative z-30 -ml-3 object-cover" />
-                        <img src="https://pagedone.io/asset/uploads/1694846704.png" alt="Rounded image"
-                        className="border-2 border-solid border-indigo-50 rounded-full relative z-20 -ml-3 object-cover" />
-                    </div> */}
-                    {/* <span className="mt-3 text-base text-gray-600 font-medium lg:ml-3">People have joined</span> */}
-                    </div>
+                    
                 </div>
-                <div className="w-full xl:col-span-7  lg:col-span-6 block">
+                <div className="w-full xl:col-span-7 lg:col-span-6 block">
                     <div className="w-full  sm:w-auto lg:w-[60.8125rem] xl:ml-16">
-                    <img src="/industrial-arch.jpg" alt="Dashboard image" className="rounded-l-3xl object-cover w-full  lg:h-auto " />
+                    <img src="/industrial-arch.jpg" alt="Dashboard image" className="rounded-l-3xl object-cover w-full lg:h-auto " />
                     </div>
                 </div>
                 </div>

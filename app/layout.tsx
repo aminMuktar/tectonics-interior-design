@@ -5,6 +5,7 @@ import "./globals.css";
 import { MenuButton } from "@/components/menu-button";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
+import { Toaster } from "react-hot-toast";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,6 +25,10 @@ export default function RootLayout({
       // className={inter.className}
       >
         <AppRouterCacheProvider options={{ key: 'css' }}>
+        <Toaster
+              position="top-center"
+              reverseOrder={false}
+            />
           <Navbar />
           {children}
           <Footer />
